@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         myWebView = (WebView)findViewById(R.id.webView);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+
+        /*Cambiar DIRECCION DE LA PAGINA WEB*/
         myWebView.loadUrl("http://192.168.0.9");
         myWebView.setWebViewClient(new WebViewClient());
     }
